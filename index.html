@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riley | Data & SQL Portfolio</title>
+<meta name="description" content="Riley's data analytics portfolio — SQL, MySQL database design, and Python data pipelines.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar container">
+    <a href="#top" class="logo">Riley<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="btn-nav">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="top" class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Data Analyst &amp; SQL Developer</p>
+      <h1>Hi, I'm Riley.<br>I turn raw data into <span class="highlight">usable databases and insight.</span></h1>
+      <p class="hero-sub">
+        This is a sample portfolio showcasing hands-on work in MySQL database design, Python data pipelines,
+        and analytical SQL — built from real ingestion projects with live sports and healthcare data.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p class="section-lead">
+        I design relational databases and build the pipelines that fill them. My work focuses on taking messy,
+        real-world data — API responses, CSV exports — and turning it into clean, normalized MySQL schemas that
+        are easy to query and easy to trust. Below are a few sample projects that walk through the full journey:
+        schema design, data ingestion, and the SQL reports built on top.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-lead">A sample of end-to-end data projects — from database design to ingestion to analysis.</p>
+
+      <div class="project-grid">
+
+        <article class="card">
+          <div class="card-head">
+            <h3>NHL Data Pipeline</h3>
+            <span class="card-tag">Python &middot; MySQL &middot; REST API</span>
+          </div>
+          <p>
+            An ETL pipeline that pulls live standings, schedules, rosters, and player data from the NHL's
+            official API and loads it into a normalized MySQL database (<code>teams</code>, <code>standings</code>,
+            <code>games</code>, <code>players</code>, <code>rosters</code>). Includes upsert logic so the
+            data stays fresh on every run.
+          </p>
+          <div class="card-links">
+            <a href="ingest_nhl.ipynb" download>Ingestion Notebook</a>
+            <a href="nhl.ipynb" download>API Exploration Notebook</a>
+            <a href="reports/NHL_SQL_Query_Guide.docx" download>SQL Query Guide</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Patient Segmentation Analytics</h3>
+            <span class="card-tag">Python &middot; Pandas &middot; MySQL</span>
+          </div>
+          <p>
+            A healthcare analytics pipeline that ingests 2,000 patient records from CSV, maps categorical
+            fields to normalized lookup tables (state, insurance type, condition), and loads everything into
+            a relational schema ready for segmentation and risk analysis.
+          </p>
+          <div class="card-links">
+            <a href="ingest_patients.ipynb" download>Ingestion Notebook</a>
+            <a href="patient_segmentation_dataset.csv" download>Source Dataset (CSV)</a>
+            <a href="reports/Healthcare_SQL_Query_Guide.docx" download>SQL Query Guide</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Database Setup &amp; Tutorials</h3>
+            <span class="card-tag">MySQL &middot; Documentation</span>
+          </div>
+          <p>
+            Step-by-step written guides for standing up a MySQL database from scratch and running SQL
+            scripts safely in MySQL Workbench — written for teammates and clients who are new to SQL.
+          </p>
+          <div class="card-links">
+            <a href="MySQL_Database_Setup_Tutorial.docx" download>Database Setup Tutorial</a>
+            <a href="Running SQL Scripts in MySQL Workbench.docx" download>Running SQL Scripts Guide</a>
+            <a href="files/database_set_up.zip" download>Schema Scripts (.zip)</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>SQL Query Guide Library</h3>
+            <span class="card-tag">SQL &middot; Reporting</span>
+          </div>
+          <p>
+            A bundled collection of reporting queries covering team standings, roster breakdowns, and
+            scoring trends for the NHL dataset alongside patient overview, risk, and preventive-care
+            queries for the healthcare dataset.
+          </p>
+          <div class="card-links">
+            <a href="reports.zip" download>Full Reports Bundle (.zip)</a>
+            <a href="seed_db_choose_your_own.zip" download>Starter Seed Kit (.zip)</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-grid">
+        <li>MySQL &amp; Relational Database Design</li>
+        <li>Python (pandas, requests)</li>
+        <li>ETL / Data Pipelines</li>
+        <li>Jupyter Notebooks</li>
+        <li>REST API Integration</li>
+        <li>Data Cleaning &amp; Normalization</li>
+        <li>Analytical SQL &amp; Reporting</li>
+        <li>Technical Documentation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container contact-inner">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-lead">Interested in working together or have questions about a project? Reach out below.</p>
+      <div class="contact-links">
+        <a href="mailto:riley@example.com" class="btn btn-primary">riley@example.com</a>
+        <a href="https://github.com/" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Riley. Sample portfolio built with HTML, CSS &amp; JS.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
